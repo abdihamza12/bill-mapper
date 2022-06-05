@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bill Mapper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="stylesheet.css" />
     <script src="script.js" defer></script>
   </head>
@@ -16,30 +22,31 @@
         each month:
       </h2>
     </header>
+    <main>
+      <div id="total-cost">
+        <span>Total Per Month: </span>
+        <span id="total-spent">0</span>
+      </div>
 
-    <div id="total-cost">
-      <span>Total Per Month: </span>
-      <span id="total-spent">0</span>
-    </div>
-
-    <form id="billForm">
-      <input
-        type="text"
-        name="service"
-        id="service"
-        placeholder="Service"
-        required
-      />
-      <input
-        type="number"
-        name="price"
-        id="price"
-        placeholder="Price"
-        required
-      />
-      <button type="submit" value="submit">ADD BILL</button>
-      <button type="reset">RESET</button>
-    </form>
-    <ul id="bill-list"></ul>
+      <form id="billForm">
+        <input
+          type="text"
+          name="service"
+          id="service"
+          placeholder="Service"
+          required
+        />
+        <input
+          type="number"
+          name="price"
+          id="price"
+          placeholder="Price"
+          required
+        />
+        <button type="submit" value="submit">ADD BILL</button>
+        <button type="reset">RESET</button>
+      </form>
+      <ul id="bill-list"></ul>
+    </main>
   </body>
 </html>
