@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Mapper</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>BILL TRACKER</h1>
+      <h2>
+        Add all monthly expenses to this tracker to see just how much u spend
+        each month:
+      </h2>
+    </header>
+
+    <div id="total-cost">
+      <span>Total Per Month: </span>
+      <span id="total-spent">0</span>
+    </div>
+
+    <form id="billForm">
+      <input
+        type="text"
+        name="service"
+        id="service"
+        placeholder="Service"
+        required
+      />
+      <input
+        type="number"
+        name="price"
+        id="price"
+        placeholder="Price"
+        required
+      />
+      <button type="submit" value="submit">ADD BILL</button>
+      <button type="reset">RESET</button>
+    </form>
+    <ul id="bill-list"></ul>
+  </body>
+</html>

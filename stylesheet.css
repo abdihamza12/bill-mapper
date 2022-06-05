@@ -1,0 +1,17 @@
+.bill-element > * {
+  margin: 0.25em;
+}
+
+div,
+#total-cost {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+}
+
+#total-cost > span {
+  text-align: left;
+}
+
+h2 {
+  max-width: 30em;
+}
