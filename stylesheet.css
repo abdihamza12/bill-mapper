@@ -98,7 +98,7 @@ form > #reset:hover {
   background-color: rgba(130, 255, 255, 0.5);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   form > #submit:hover {
     background-color: unset;
   }
