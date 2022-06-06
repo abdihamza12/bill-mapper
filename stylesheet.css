@@ -98,6 +98,16 @@ form > #reset:hover {
   background-color: rgba(130, 255, 255, 0.5);
 }
 
+@media only screen and (max-width: 400px) {
+  form > #submit:hover {
+    background-color: unset;
+  }
+
+  form > #reset:hover {
+    background-color: unset;
+  }
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
