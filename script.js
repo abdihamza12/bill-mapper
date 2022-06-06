@@ -43,6 +43,7 @@ function createLi() {
     "onclick",
     "totalValSub(this.parentElement); deleteDiv(this);"
   );
+  removeBtn.setAttribute("class", "remove-btn");
 
   div.appendChild(servSpan);
   div.appendChild(pricSpan);
@@ -68,6 +69,13 @@ form.addEventListener("submit", (event) => {
   inputs.forEach((input) => {
     input.value = "";
   });
+});
+
+form.addEventListener("reset", (event) => {
+  event.preventDefault();
+
+  document.getElementById("bill-list").innerHTML = "";
+  document.getElementById("total-spent").innerHTML = 0;
 });
 
 // this.getElementById('Price').innerHTML
