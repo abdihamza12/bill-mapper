@@ -26,7 +26,7 @@ div,
 }
 
 header > * {
-  text-shadow: 1px 1px black;
+  text-shadow: 1px -1px rgb(30, 30, 30);
   color: white;
 }
 
@@ -46,7 +46,8 @@ main {
   border: 3px solid black;
   font-family: "DM Mono", monospace, sans-serif;
   border-radius: 10px 1px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, .5);
+  
   padding: 0.5em;
   
 }
@@ -86,13 +87,17 @@ form > input {
 
 form > button {
   text-align: center;
-  
+  background-color: inherit;
   width: auto;
   margin: 2em .5em 2em .5em;
   height: 60%;
 }
-form > button:hover {
+form > #submit:hover {
   background-color: rgba(255, 130, 255, .5);
+}
+
+form > #reset:hover {
+  background-color: rgba(130, 255, 255, .5);
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -103,4 +108,20 @@ input[type=number]::-webkit-outer-spin-button {
 
 .remove-btn:hover {
   background-color: rgba(130, 255, 255, .5);
+}
+
+#total-cost {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+#total-cost > span {
+  text-align: center;
+  color: rgb(255, 255, 255) ;
+  text-shadow: 1px 1px 1px rgb(83, 83, 110);
+}
+
+#total-spent {
+  font-family: 'Kdam Thmor Pro', monospace, sans-serif;
+  font-size: 4em;
 }
