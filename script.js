@@ -43,6 +43,7 @@ function createLi() {
     "onclick",
     "totalValSub(this.parentElement); deleteDiv(this);"
   );
+  removeBtn.setAttribute('class', "remove-btn")
 
   div.appendChild(servSpan);
   div.appendChild(pricSpan);

@@ -46,7 +46,13 @@
         <button type="submit" value="submit">ADD BILL</button>
         <button type="reset">RESET</button>
       </form>
-      <ul id="bill-list"></ul>
+      <ul id="bill-list">
+        <div class="bill-element">
+          <span class="Service">Example Service</span>
+          <span class="Price" id="price" value="12">0</span>
+          <button onclick="totalValSub(this.parentElement); deleteDiv(this);" class="remove-btn">REMOVE</button>
+        </div>
+      </ul>
     </main>
   </body>
 </html>
