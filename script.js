@@ -76,6 +76,7 @@ form.addEventListener("reset", (event) => {
 
   document.getElementById("bill-list").innerHTML = "";
   document.getElementById("total-spent").innerHTML = 0;
+  totalChanged = 0;
 });
 
 // this.getElementById('Price').innerHTML
