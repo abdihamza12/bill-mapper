@@ -54,7 +54,7 @@ main {
 }
 
 body {
-  width: auto;
+  background-size: cover;
   display: grid;
   background-image: linear-gradient(
     90deg,
